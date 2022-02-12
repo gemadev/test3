@@ -432,6 +432,7 @@
     padding-right: 0;
     border-right: none;
 }
+@media (min-width: 992px){
 .sponsorship img{
     margin-left: 600px;
 }
@@ -453,6 +454,7 @@
    max-width: 500px;
 
     /*position: relative;*/
+}
 }
 /*
 .en{
