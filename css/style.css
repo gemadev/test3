@@ -494,13 +494,8 @@ body{
         
     }
     .check{
-        margin:110px -30px;
-        display:inline-flex;
-        max-width: 30%;
-        padding-top: 200px;
-        position: absolute;  
-        z-index: 2500;
-        width: 50px;
+        transform: rotate(90deg);
+        margin-top: 10px;
     }
     .check:before{
         content: '';
@@ -531,3 +526,22 @@ body{
     
         background: #00a1ff;
     }
+
+#language {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#language .es, #language .en {
+    margin-top: 24px;
+    margin-left: 5px;
+}
+.bgimg{
+    background-image: url('../img/contact-sea.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+}
