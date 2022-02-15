@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@526&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -436,96 +439,106 @@ body{
     padding-right: 0;
     border-right: none;
 }
-@media (min-width: 992px){
-.sponsorship img{
-    margin-left: 600px;
-}
-.sponsorship-text{
-   margin-block-start: 10px;
-   margin-left: -600px;
-   position: relative;
-   max-width: 500px;
-
-    /*position: relative;*/
-}
-.communication img{
-    margin-left: 600px;
-}
-.communication-text{
-   margin-block-start: 10px;
-   margin-left: -600px;
-   position: relative;
-   max-width: 500px;
-
-    /*position: relative;*/
-}
-}
-/*
-.en{
-       
-    margin: 10px auto;
-    display: inline-flex;
-    max-width: 30%;
-    padding-top: 4em;
-    position: relative;
-    z-index: 2500;
-        color:red;
+@media (max-width: 992px){
+    #logo-img-carousel {
+        width: 10% !important;
+        position: absolute;
+        z-index: 9999;
+        bottom: 100px;
+        right: 100px !important;
         
-    
     }
-    .es{
-        margin: 10px auto;
-        display: inline-flex;
-        max-width: 30%;
-        padding-top: 4em;
+ }
+ @media (max-width: 600px){
+    .sponsorship img{
+        margin-left: 0px !important;
+    }
+    .sponsorship-text{
+        margin-block-start: 10px;
+        margin-left: 0px !important;
         position: relative;
-        z-index: 2500;
-    
-        color: red;
-    
+        max-width: 500px;
+        }
 
+        .communication img{
+            margin-left: 0px !important;
+        }
+        .communication-text{
+        margin-block-start: 10px;
+        margin-left: 0px !important;
+        position: relative;
+        max-width: 500px;
+        }    
+ }
+    .sponsorship img{
+        margin-left: 600px;
     }
-    */
-    .flag{
-        position: absolute;
+    .sponsorship-text{
+    margin-block-start: 10px;
+    margin-left: -600px;
+    position: relative;
+    max-width: 500px;
     }
-    
-    .btncontainer{
+    .communication img{
+        margin-left: 600px;
+    }
+    .communication-text{
+    margin-block-start: 10px;
+    margin-left: -600px;
+    position: relative;
+    max-width: 500px;
+    }
+
+
+.flag{
+    position: absolute;
+}
+
+.check{
+    margin: 10px 0px;
+    display:inline-flex;
+    max-width: 30%;
+    padding-top: 200px;
+    position: absolute;  
+    z-index: 2500;
+    width: 50px;
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333 ;
+    border-radius: 25px;
+}
+.check:after{
+
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked:after{
+
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+.check:checked:after{
+
+    background: #00a1ff;
+}
+@media (max-width: 992px){
+    .check:checked:after{
         
-    }
-    .check{
-        transform: rotate(90deg);
-        margin-top: 10px;
-    }
-    .check:before{
-        content: '';
-        position: absolute;
-        width: 50px;
-        height: 25px;
-        background: #333 ;
-        border-radius: 25px;
-    }
-    .check:after{
-    
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        background: #fff;
-        border-radius: 25px;
-        transition: 0.25s;
-        border: 2px solid #333;
-        box-sizing: border-box;
-    }
-    .check:checked:after{
-    
-        left: 25px;
-        border: 2px solid #00a1ff;
-    }
-    .check:checked:after{
-    
         background: #00a1ff;
     }
+}
+
 
 #language {
     height: 100%;
@@ -536,12 +549,51 @@ body{
 }
 
 #language .es, #language .en {
-    margin-top: 24px;
-    margin-left: 5px;
+    margin-top: 40px;
 }
 .bgimg{
     background-image: url('../img/contact-sea.jpg');
     background-repeat: no-repeat;
     background-position: center; 
     position: relative;
+}
+
+#logo-img-carousel {
+    width: 700px;
+    position: absolute;
+    z-index: 9999;
+    bottom: 0px;
+    right: 320px;
+}
+
+#carousel {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+#logo-img-color {
+    width: 330px;
+}
+
+#sponsorship,
+#events-prod,
+#tourism {
+    padding-top: 100px!important;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.rounded-img{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.rounded-img img{
+    padding: 25px;
+    max-width: 200px;
+    width: 100%;
 }

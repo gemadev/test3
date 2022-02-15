@@ -44,7 +44,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"></i>TourProdEnter</h2>
+            <img id="logo-img-color" src="../img/logo-color.png" alt="LOGO">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -52,15 +52,15 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a href="courses.html" class="nav-item nav-link">Patrocinio y Esponsoreo</a>
-                <a href="event.html" class="nav-item nav-link">Produccion de Eventos</a>
-                <a href="about.html" class="nav-item nav-link">Turismo</a>
-                <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                <a href="#sponsorship" class="nav-item nav-link">Patrocinio y Esponsoreo</a>
+                <a href="#events-prod" class="nav-item nav-link">Eventos</a>
+                <a href="#tourism" class="nav-item nav-link">Turismo</a>
+                <a href="#contact" class="nav-item nav-link">Contacto</a>
                 <a href="">
                     <div id="language">
                         <input type="checkbox" class="check" checked>
-                        <div id="en-button" class="en">EN</div>
-                        <div id="es-button" class="es">ES</div>
+                        <div id="en-button" class="en">INGLISH</div>
+                        <div id="es-button" class="es">INGLISH</div>
                     </div>
                 </a>
     </nav>
@@ -68,7 +68,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
+    <div id="carousel" class="container-fluid p-0 mb-5">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="../img/carousel-1.jpg" alt="">
@@ -99,7 +99,12 @@
     </div>
     <!-- Carousel End -->
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <h2 class="section-title bg-white text-center text-primary px-3">Elevamos tu marca a otro nivel</h2>
+        <h4 class="mb-4">Manejo y comercialización de compañías e instituciones</h4>   
+    </div>
+    <div id="sponsorship" class="container-xxl py-5">
+        <h2 class="mb-4 text-center">Nuestros servicios:</h2>   
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
@@ -114,7 +119,7 @@
             </div>
         </div>
     </div>
-    <div class="container-xxl py-5">
+    <div id="events-prod" div class="container-xxl py-5">
         <div class="sponsorship">
         <div class="container">
             <div class="row g-5">
@@ -133,7 +138,7 @@
         </div>
     </div>
 </div>
-    <div class="container-xxl py-5">
+    <div id="tourism" div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
@@ -152,23 +157,23 @@
     <!-- About End -->
     <!-- Categories Start -->
     <!-- Courses Start -->
-    <div class="container-xxl py-5">
+    <div id="communication" div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-light">
+                        <div class="position-relative overflow-hidden rounded-img container-fluid text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.3s">
                             <img class="img-fluid" src="../img/communication.png" alt="">
                         </div>
                         <div class="text-center p-4 pb-0">
                             <h3 class="mb-0">COMUNICACIÓN</h3>
-                            <h5 class="mb-4">Trabajamos desde el origen la comunicación de marcas e instituciones hasta una construcción sólida y una difusión efectiva. Branding, identidad visual y discursiva, comunicación corporativa, campañas y comunicación interna.</h5>
+                            <h5 class="mb-8">Trabajamos desde el origen la comunicación de marcas e instituciones hasta una construcción sólida y una difusión efectiva. Branding, identidad visual y discursiva, comunicación corporativa, campañas y comunicación interna.</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-light">
+                        <div class="position-relative overflow-hidden rounded-img container-fluid text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.3s">
                             <img class="img-fluid" src="../img/Marketing.png" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                             </div>
@@ -184,7 +189,7 @@
     </div>
     <!-- Courses End -->
     <!-- Footer Start -->
-    <div class="bgimg">
+    <div id="contact" class="bgimg">
     <div class="container-fluid text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
@@ -200,7 +205,7 @@
 Asimismo, las acciones y actividades se realizan conforme a la reglamentación y normativas vigentes en la materia en cada uno de los países en los que los mismos se desarrollen.
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">TourProdEnter</a>,
+                        &copy; <a class="border-bottom" href="#">TourProdEnter</a>
                     </div>
                     </div>
                 </div>
