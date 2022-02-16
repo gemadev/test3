@@ -468,8 +468,16 @@ body{
         margin-left: 0px !important;
         position: relative;
         max-width: 500px;
-        }    
+        }  
+        #language {
+            height: 100%;
+            width: 100px;
+            display: flex;
+            justify-content: left !important;
+            align-content: center;
+        }  
  }
+
     .sponsorship img{
         margin-left: 600px;
     }
@@ -553,7 +561,6 @@ body{
 }
 .bgimg{
     background-image: url('../img/contact-sea.jpg');
-    background-repeat: no-repeat;
     background-position: center; 
     position: relative;
 }
@@ -596,4 +603,8 @@ body{
     padding: 25px;
     max-width: 200px;
     width: 100%;
+}
+
+.eeuu{
+    margin-bottom: 3px;
 }
